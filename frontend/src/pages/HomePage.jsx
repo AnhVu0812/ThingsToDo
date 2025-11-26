@@ -97,14 +97,16 @@ const HomePage = () => {
         <div className="w-full max-w-2xl p-6 mx-auto space-y-6">
           {/* Header Component */}
           <Header />
+
           {/* Add Task*/}
           <AddTask handleNewTaskAdded={handleTaskChanged} />
+
           {/* Stats and Filters */}
           <StatsAndFilters
             filter={filter}
             setFilter={setFilter}
             activeTasksCount={activeTaskCount}
-            completeTasksCount={completeTaskCount}
+            completedTasksCount={completeTaskCount}
           />
           {/* Task List */}
           <TaskList
